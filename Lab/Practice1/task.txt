@@ -1,0 +1,33 @@
+File permission in Unix / Linux
+
+	1. Owner
+	2. Group of users
+	3. All the other users
+
+-> read = r
+-> write = w
+-> execute = x
+
+File permission are shown in a 10 character string.
+The first character shows the type of file.
+like:
+	link = l
+	directory = d
+	file = -
+
+ex: -rwxr-xr--
+	here :  - = shows type of file
+		rwx = owner permission
+		r-x = group of users permission
+		r-- = all the user permission
+
+Changing the file permission
+
+	*chmod
+
+-> we can change file permission using chmod through the use of symbolic and numeric modes.
+
+Owner represented by (u) = chmod u+w file_name
+Group represented by (g) = chmod g-r file_name
+other represented by (o) = chmod o+x file_name
+All the three category represented by (a) = chmod a=r file_name
